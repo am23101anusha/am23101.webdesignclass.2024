@@ -142,130 +142,69 @@ small {
   margin-top: 20px;
 }
 
-.card-container {
+.education-experience-container {
   display: flex;
-  justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 20px;
+  max-width: 1200px;
 }
 
-.card {
-  width: 350px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-front {
-  background-color: #111;
-  color: #2ebc83;
-}
-
-.card-back {
-  margin: 0; /* Add padding to prevent content from sticking to the edges */
-  background-color: #000000;
-  color: #ffffff;
-  transform: rotateY(180deg);
-  height: 300px; /* Adjust the height as needed */
-  overflow-y: auto; /* Enable vertical scrolling */
-   
-}
-
-.card-content {
-  text-align: center;
-  width: 80%; /* Adjust the width as needed */
-  margin: auto; /* Center the content horizontally */
-}
-
-.card-content p {
-  margin: 0;
-}
-
-
-.card-content h3{
-  margin: 0;
+#education, #experience {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
 }
 
 .carousel-image {
   height: 300px;
-  width: 1fr; /* Adjust the height as needed */
+  width: auto;
 }
 
 .card_exp {
   width: 100%;
-  max-width: 400px; /* Ensure cards are the same size */
+  max-width: 400px;
   position: relative;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .card_exp .image-box {
   width: 100%;
   position: relative;
   border-radius: 8px;
-  overflow: hidden; /* Ensure the image stays within the box */
+  overflow: hidden;
   display: flex;
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
-  height: 200px; 
-  width: 400px; 
-  overflow-x: auto; 
-  
-   /* Adjust the height to make the image box smaller */
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 
 .card_exp .image-box img {
-  max-width: 100%; /* Ensure the image does not exceed the box width */
-  max-height: 100%; /* Ensure the image does not exceed the box height */
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
-  object-position: 50% 50%; /* Adjust as needed */
   border-radius: inherit;
   transition: 0.5s ease-in-out;
-  
 }
 
 .content_exp {
   padding: 20px;
-  opacity: 0; /* Initially hide the description */
-  transition: opacity 0.4s ease-in-out; /* Add transition effect */
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
   width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  overflow-x: auto; 
 }
 
 .card_exp:hover .content_exp {
-  opacity: 1; /* Show the description on hover */
+  opacity: 1;
 }
 
 .card_exp:hover img {
@@ -285,6 +224,16 @@ small {
 .card_exp:hover::after {
   opacity: 1;
   inset: 20px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 20px;
+  width: 100%;
 }
 
 .grid-container3 {
@@ -363,3 +312,195 @@ small {
     opacity: 0;
   }
 }
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+
+
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.grid-container4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.movie_card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s;
+  box-shadow: 0px 0px 120px -25px rgba(0,0,0, 0.5);
+}
+
+.movie_card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 80px -25px rgba(0,0,0, 0.5);
+  transition: all 0.4s;
+}
+
+.info_section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-blend-mode: multiply;
+  z-index: 2;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.movie_header {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.movie_header h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+.movie_header h4 {
+  color: #555;
+  font-weight: 400;
+}
+
+.movie_header .minutes {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.movie_header .type {
+  display: inline-block;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.movie_header .locandina {
+  float: left;
+  margin-right: 20px;
+  height: 120px;
+  box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
+}
+
+.movie_desc {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie_desc .text {
+  color: #ffffff;
+}
+
+.blur_back {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .info_section {
+    flex-direction: row;
+  }
+
+  .movie_header {
+    width: 50%;
+  }
+
+  .movie_desc {
+    width: 50%;
+  }
+
+  .blur_back {
+    width: 80%;
+    background-position: -100% 10% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie_card {
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto;
+    height: auto;
+  }
+
+  .info_section {
+    flex-direction: column;
+  }
+
+  .blur_back {
+    width: 100%;
+    background-position: 50% 50% !important;
+  }
+
+  .movie_header {
+    width: 100%;
+    margin-top: 85px;
+  }
+
+  .movie_desc {
+    width: 100%;
+  }
+}
+
+/******* Fonts Import Start **********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+
+
+.line-title {
+  position: relative;
+  width: 400px;
+}
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+.line-title::after {
+  width: 32px;
+  background: #e73700;
+}
+
