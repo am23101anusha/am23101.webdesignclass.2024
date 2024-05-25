@@ -7,7 +7,8 @@
 
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -40,9 +41,10 @@
         </a>
       </div>
       <div class="grid-item" id="contact-me">
-        <a href="#contact">
-          <button>Contact Me</button>
-        </a>
+        <a href="https://www.instagram.com/your_username" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/your_username" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+        <a href="https://github.com/your_username" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+      
       </div>
     </div>
   </nav>
@@ -53,10 +55,11 @@
 
   <section id="about">
 
-    <div class="animated-heading">HI, ANUSHA HERE.</div>
-
-    <div class="container4">
-      <div class="text">Welcome to my portfolio website</div>
+    <div class="intro">
+      <div class="content">
+        <div class="animated-heading">HI, ANUSHA HERE.</div>
+        <div class="welcome-text">Welcome to my portfolio website</div>
+      </div>
     </div>
     
     <div class="grid-container2">
@@ -65,13 +68,19 @@
         <p>Hi! My name is Anusha. I'm a first-year student part of the Innovative Global Program at Shibaura Institute of Technology. I'm currently studying engineering with a concentration in Biomedical Engineering. I was born in India, and brought up in Tokyo. I've lived in Tokyo for more than 17 years now. I can speak English, Japanese, Hindi, and Tamil quite fluently. In India, I come from the Southern side, a state called Tamil Nadu. Please feel free to explore other areas on this portfolio webpage and don't hesitate to contact me.</p>
       </div>
       <div class="image">
-        <img src="bgimage.png" alt="About Me Image">
+        <img src="papa.jpg" alt="About Me Image">
       </div>
-    </div>
+      <div class="say-hi-box" onclick="sendEmail()"><button class="shadow__btn">
+        say hi!</button></div>
+      
+      </div>
     
 
   
+    
     <div class="education-experience-container">
+     
+
       <section id="education">
         <h2>Education</h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -85,6 +94,8 @@
               <div class="carousel-caption d-none d-md-block">
                 <h5><mark>2009-2023</mark></h5>
                 <p><mark>India International School in Japan</mark></p>
+                <p>From Lower Kindergarten to 12th Grade, I was in the Indian International School in Japan. If I am here today, I definitely owe it to this place.</p>
+                <p>I made so many friends and memories, it was like my second home. Leaving that place was hard and I still sometimes want to go back to the fun we all had once.</p>
               </div>
             </div>
             <div class="carousel-item">
@@ -92,6 +103,8 @@
               <div class="carousel-caption d-none d-md-block">
                 <h5><mark>2023-2027</mark></h5>
                 <p><mark>Shibaura Institute of Technology</mark></p>
+                <p>Currently, I am in my first year second semester at Shibaura Institute of Technology. i am part of the Welfare and Human Engineering Lavoratory and my major is Biomedical Enginnering.</p>
+                <p>I've had the oppurtunity  to takepart in several oppurunities and develop my skills.I look forward to more. :)</em></p>
               </div>
             </div>
           </div>
@@ -100,108 +113,130 @@
             <span class="sr-only">Previous</span>
           </a>
           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-    </a>
-    </div>
-    
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </section>
-      <section id="experience">
-        <h2>Experience</h2>
-        <div class="grid-container3">
-          <div class="card_exp">
-            <div class="image-box">
-              <img src="bgimage.png" alt="Experience Image 1">
-            </div>
-            <div class="content_exp">
-              <h3>Experience Title 1</h3>
-              <p>Description for experience 1.</p>
-            </div>
+    </div>
+      
+    </div>
+
+    <section id="research">
+      <h2>My Research in VR Telerehabilitation</h2>
+      <div class="research-container">
+          <div class="research-text">
+              <p>
+                Aim of my research:
+                To develop an efficient telerehabilitation system using Virtual Reality (VR), the Inertial Measurement Unit (IMU), and Electromyography (EMG) that considers patient motivation, and provides easy data transmission and feedback. 
+              </p>
+              <p>
+                With the rising advancement of technology, Virtual reality is a new approach to the healthcare field. With the help of VR, it is now possible to provide telerehabilitation services to patients from their homes my research exclusively focuses on people who are affected by stroke and have limited motor function in their upper limbs. Currently, I am using an Oculus Quest 2 to build my first version of the game and I plan to incorporate it with an Inertial Measurement Unit Sensor (IMU). 
+              </p>
+              <p>
+                  Currently, I am working on collecting data related to upper, limb movements using MAC 3D system. This system has several cameras to track and calculate the joint angles and positions of the body parts we want to measure. I am also learning how to use the Inertial Measurement Unit simultaneously, which is most commonly used for hand-tracking movements. 
+              </p>
+              <p>
+                By the end of my undergardauate program, I hope to come up with an effective system taht is coniderate of patients and provides and improvement in upper limb motor function. 
+              </p>
+          </div>
+          <div class="research-images">
+              <img src="rehab.png" alt="VR Telerehabilitation Image 1">
+              <img src="rehab2.png" alt="VR Telerehabilitation Image 2">
+              <img src="rehab3.png" alt="VR Telerehabilitation Image 3">
+          </div>
+      </div>
+  </section>
+
+
+
+
+  <section id="hobbies">
+      <h2>My Hobbies</h2>
+      <div class="hobbies-container">
+          <div class="hobby">
+              <img src="books.png" alt="Reading" >
+              <h3>Reading</h3>
+              <p>I love to immerse myself in different worlds through books.</p>
+          </div>
+          <div class="hobby">
+              <img src="bali.png" alt="Traveling">
+              <h3>Traveling</h3>
+              <p>Exploring new places and cultures is my passion. </p>
+          </div>
+          <div class="hobby">
+              <img src="oppy.jpeg" alt="Watching Movies">
+              <h3>Watching Movies</h3>
+              <p>I love watching movies especially hollywood and Indian movies.</p>
+          </div>
+          <div class="hobby">
+              <img src="skills.png" alt="Photography">
+              <h3>New Skills</h3>
+              <p>Unity, Sensors and Motion Capture! Of course, my coding skills too ...</p>
+          </div>
+      </div>
+  </section>
+
+  <section id="movies">
+    <div class="favmovies"><h2>My Favorite Movies </h2></div>
+    <div class="grid-container4">
+      <div class="movie_card" id="bright">
+        <div class="info_section">
+          <div class="movie_header">
+            <img class="locandina" src="oppenheimer-movie-poster.jpg"/>
+            <h1>Oppen heimer</h1>
+            <h4>2023, Christopher Nolan</h4>
+            <span class="minutes">180 min</span>
+            <p class="type">Biography, Drama </p>
+          </div>
+          <div class="movie_desc">
+            <p class="text">
+              "Oppenheimer" is a biographical drama about J. Robert Oppenheimer, who led the Manhattan Project and created the atomic bomb. The film explores his scientific achievements, moral dilemmas, and the impact of his work on the world.
+            </p>
           </div>
         </div>
-      </section>
-    </div>
-
-
-<section id="movies">
-  <h2>My Favorite Movies </h2>
-  <div class="grid-container4">
-    <div class="movie_card" id="bright">
-      <div class="info_section">
-        <div class="movie_header">
-          <img class="locandina" src="https://movieplayer.net-cdn.it/t/images/2017/12/20/bright_jpg_191x283_crop_q85.jpg"/>
-          <h1>Bright</h1>
-          <h4>2017, David Ayer</h4>
-          <span class="minutes">117 min</span>
-          <p class="type">Action, Crime, Fantasy</p>
-        </div>
-        <div class="movie_desc">
-          <p class="text">
-            Set in a world where fantasy creatures live side by side with humans. A human cop is forced to work with an Orc to find a weapon everyone is prepared to kill for. 
-          </p>
-        </div>
+        <div class="blur_back bright_back"></div>
       </div>
-      <div class="blur_back bright_back"></div>
-    </div>
-
-    <div class="movie_card" id="tomb">
-      <div class="info_section">
-        <div class="movie_header">
-          <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53750.jpg"/>
-          <h1>Tomb Raider</h1>
-          <h4>2018, Roar Uthaug</h4>
-          <span class="minutes">125 min</span>
-          <p class="type">Action, Fantasy</p>
-        </div>
-        <div class="movie_desc">
-          <p class="text">
-            Lara Croft, the fiercely independent daughter of a missing adventurer, must push herself beyond her limits when she finds herself on the island where her father disappeared.
-          </p>
-        </div>
-      </div>
-      <div class="blur_back tomb_back"></div>
-    </div>
-
-    <div class="movie_card" id="ave">
-      <div class="info_section">
-        <div class="movie_header">
-          <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53715.jpg"/>
-          <h1>Black Panther</h1>
-          <h4>2018, Ryan Coogler</h4>
-          <span class="minutes">134 min</span>
-          <p class="type">Action, Adventure, Sci-Fi</p>
-        </div>
-        <div class="movie_desc">
-          <p class="text">
-            T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of T'Challa's father's mistake. 
-          </p>
-        </div>
-      </div>
-      <div class="blur_back ave_back"></div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Contact Me Section -->
-<section id="contact">
-  <div class="grid-container2">
-    <div class="content">
-      <h2>Contact Me</h2>
-      <p>You can reach me at:</p>
-      <ul>
-        <li>Email: am23101@shibaura-it.ac.jp</li>
-        <li>Phone: +81 70-4420-4933</li>
-      </ul>
-    </div>
-    <div class="image">
-      <img src="contactimage.png" alt="Contact Image">
-    </div>
-  </div>
-</section>
-
-  </section>
   
+      <div class="movie_card" id="tomb">
+        <div class="info_section">
+          <div class="movie_header">
+            <img class="locandina" src="batman.jpg"/>
+            <h1>The Batman</h1>
+            <h4>2022, Matt Reeves</h4>
+            <span class="minutes">175 min</span>
+            <p class="type">Action</p>
+          </div>
+          <div class="movie_desc">
+            <p class="text">
+              In "The Batman," Robert Pattinson's vigilante battles the Riddler's reign of terror in Gotham City, confronting corruption and personal struggles along the way.
+            </p>
+          </div>
+        </div>
+        <div class="blur_back tomb_back"></div>
+      </div>
+  
+      <div class="movie_card" id="ave">
+        <div class="info_section">
+          <div class="movie_header">
+            <img class="locandina" src="darknight.jpg"/>
+            <h1>The Dark Knight</h1>
+            <h4>2008, Christopher Nolan</h4>
+            <span class="minutes">134 min</span>
+            <p class="type">Action</p>
+          </div>
+          <div class="movie_desc">
+            <p class="text">
+              In "The Dark Knight," Batman faces off against the Joker, a chaotic criminal mastermind who seeks to plunge Gotham City into anarchy. As Batman grapples with the moral dilemmas of his vigilantism, he must protect the city while confronting his own limitations and the consequences of his actions.
+            </p>
+          </div>
+        </div>
+        <div class="blur_back ave_back"></div>
+      </div>
+    </div>
+  </section>
+
+
 
   <hr>
   <small>&copy; All Rights Reserved, by Anusha Ashok</small>
