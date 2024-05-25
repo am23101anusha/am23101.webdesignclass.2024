@@ -1,0 +1,3 @@
+This research deals with the application of Virual Reality for telemedicine and telerehabilitation purposes, partticularly that of stroke patients.
+It involoves a gamified amnd immersive approach that can be started and done at the patient's home. It offers both visual and audio feedback. 
+In addition to that, it uses some IMU sensors (Inertial Measuremnet Unit) sensors thathelp with movemnet tracking adn send the data collected to the therapist at the hospital. The therapist then evaluates whether the patient's upper limb fmotor function has improved or it. 
