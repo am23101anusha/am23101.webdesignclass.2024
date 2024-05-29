@@ -11,15 +11,87 @@
   align-items: center;
   text-align: center;
   height: 100vh; /* Adjust as needed */
-  background-color: #1e212d; /* Dark blue-gray background */
+  background-color: #21232c; /* Dark blue-gray background */
 }
+
+
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
+
+@keyframes loader_5191 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.square {
+  background: #185732;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+#sq1 {
+  margin-top: -25px;
+  margin-left: -25px;
+  animation: loader_5191 675ms ease-in-out 0s infinite alternate;
+}
+
+#sq2 {
+  margin-top: -25px;
+  animation: loader_5191 675ms ease-in-out 75ms infinite alternate;
+}
+
+#sq3 {
+  margin-top: -25px;
+  margin-left: 15px;
+  animation: loader_5191 675ms ease-in-out 150ms infinite;
+}
+
+#sq4 {
+  margin-left: -25px;
+  animation: loader_5191 675ms ease-in-out 225ms infinite;
+}
+
+#sq5 {
+  animation: loader_5191 675ms ease-in-out 300ms infinite;
+}
+
+#sq6 {
+  margin-left: 15px;
+  animation: loader_5191 675ms ease-in-out 375ms infinite;
+}
+
+#sq7 {
+  margin-top: 15px;
+  margin-left: -25px;
+  animation: loader_5191 675ms ease-in-out 450ms infinite;
+}
+
+#sq8 {
+  margin-top: 15px;
+  animation: loader_5191 675ms ease-in-out 525ms infinite;
+}
+
+#sq9 {
+  margin-top: 15px;
+  margin-left: 15px;
+  animation: loader_5191 675ms ease-in-out 600ms infinite;
+}
 .animated-heading {
   margin-bottom: 20px; /* Add margin bottom to create space between animated heading and welcome text */
   padding: 20px; /* Corrected padding */
@@ -28,7 +100,7 @@
   color: #f8f8f8; /* Light gray color */
   overflow: hidden;
   white-space: nowrap;
-  border-right: 0.15em solid #000000; /* Dark tan color */
+  border-right: 0.15em solid #21232e; /* Dark tan color */
   width: 18ch; /* Adjust to match the length of the text (18 characters + 1 for the full stop) */
   animation: typing 4s steps(19, end), blink-caret 0.75s step-end infinite;
 }
@@ -55,13 +127,29 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  background-color: #1e212d; /* Dark blue-gray background */
+  background-color: #21232c; /* Dark blue-gray background */
   color: #f8f8f8; /* Light gray color */
+  padding-top: 0px; /* Adjust this value to match the height of your nav bar */
 }
 
+
 nav {
-  background-color: #2e333e; /* Darker blue-gray */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #21232c; /* Darker blue-gray */
   padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+nav a {
+  color: #f8f8f8; /* Light gray color */
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 20px;
 }
 
 button {
@@ -71,7 +159,7 @@ button {
   letter-spacing: 2.5px;
   font-weight: 500;
   color: #f8f8f8; /* Light gray color */
-  background-color: #2e333e; /* Darker blue-gray */
+  background-color: #21232c; /* Darker blue-gray */
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -82,8 +170,8 @@ button {
 
 button:hover {
   background-color: #262a34; /* Slightly darker blue-gray */
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #f8f8f8; /* Light gray color */
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+  color: #ffffff; /* Light gray color */
   transform: translateY(-7px);
 }
 
@@ -109,7 +197,7 @@ button:active {
   grid-gap: 20px;
   align-items: center;
   padding: 20px;
-  background-color: #2e333e; /* Darker blue-gray */
+  background-color: #21232c; /* Darker blue-gray */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
@@ -304,7 +392,7 @@ small {
   background-blend-mode: multiply;
   z-index: 2;
   border-radius: 10px;
-  background-color: #272930; /* Dark greenish background */
+  background-color: #21232c; /* Dark greenish background */
 }
 
 .movie_header {
@@ -451,7 +539,7 @@ small {
 
 #hobbies {
   padding: 50px 20px;
-  background-color: #1e212d; /* Dark blue-gray background */
+  background-color: #21232c; /* Dark blue-gray background */
   text-align: center;
 }
 
@@ -468,7 +556,7 @@ small {
 }
 
 .hobby {
-  background: #1e212d; /* Dark blue-gray background */
+  background: #21232c; /* Dark blue-gray background */
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -511,7 +599,7 @@ small {
 
 #research {
   padding: 50px 20px;
-  background-color: #1e212d; /* Dark blue-gray background */
+  background-color: #21232c; /* Dark blue-gray background */
   text-align: center;
 }
 
