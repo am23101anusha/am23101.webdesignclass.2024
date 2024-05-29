@@ -152,32 +152,8 @@ nav a {
   padding: 10px 20px;
 }
 
-button {
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #f8f8f8; /* Light gray color */
-  background-color: #21232c; /* Darker blue-gray */
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-}
 
-button:hover {
-  background-color: #262a34; /* Slightly darker blue-gray */
-  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
-  color: #ffffff; /* Light gray color */
-  transform: translateY(-7px);
-}
 
-button:active {
-  transform: translateY(-1px);
-}
 
 .grid-container {
   display: grid;
@@ -240,14 +216,40 @@ small {
   margin-top: 20px;
 }
 
+/* Flexbox container */
 .education-experience-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   padding: 20px;
-  max-width: 1200px;
  
+}
+.edutitle h2{
+  text-align: center;
+}
+
+
+
+/* Flex items */
+#education {
+  flex: 1 1 25%; /* Flexible items with a minimum width of 45% */
+  min-width: 100px; /* Ensuring a minimum width */
+  margin: 10px;
+  font-size: 1em; /* Base font size */
+}
+
+@media (max-width: 300px) {
+  #education{
+    flex: 1 1 25%; /* Full width on small screens */
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 200px) {
+  #education{
+    font-size: 0.8em; /* Even smaller font size for very small screens */
+    padding: 10px; /* Reduce padding */
+  }
 }
 
 .carousel-item {
@@ -256,30 +258,15 @@ small {
   text-align:left;
   opacity:1;
 }
-#education, #experience {
-  flex: 1;
-  min-width: 300px;
-  margin: 10px;
-}
+
 
 .carousel-image {
   height: 300px;
-  width: auto;
   opacity: 0.4;
 }
 
 
-.grid-container3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the columns based on available space */
-  grid-gap: 20px;
-  justify-items: center; /* Center the grid items horizontally */
-  align-items: stretch; /* Ensure items stretch to fill the space */
-  padding: 20px;
-  width: 100%;
-  max-width: 1200px; /* Adjust the max width as needed */
-  margin: 0 auto; /* Center the container within the page */
-}
+
 
 .movie-cont {
   width: 100%;
